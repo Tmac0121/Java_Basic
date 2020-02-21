@@ -24,21 +24,28 @@ public class Algorithm{
 	// 	return sumleft==sumright;
 	// }
 
-	public static int[] sort(int[] nums){
-		for (int i=1;i<nums.length ;i++ ) {
-			for (int j=0;j<nums.length-i ; j++) {
-				if (nums[j] > nums[j+1]) {
-					int m = nums[j+1];
-					nums[j+1]=nums[j];
-					nums[j]=m;
-				}
-			}
-		}
-		return nums;
-	}
+	// public static int[] sort(int[] nums){
+	// 	for (int i=1;i<nums.length ;i++ ) {
+	// 		for (int j=0;j<nums.length-i ; j++) {
+	// 			if (nums[j] > nums[j+1]) {
+	// 				int m = nums[j+1];
+	// 				nums[j+1]=nums[j];
+	// 				nums[j]=m;
+	// 			}
+	// 		}
+	// 	}
+	// 	return nums;
+	// }
+
+
+
+
+	
+
+
 
 	public static void main(String[] args) {
-		int[] a = {1,5,-5};
+		int[] a = {9,9,9,9,9};
 		int[] b = {2,3,4,5,6,3};
 		int[] c = {1,3,4,0,8};
 		System.out.println(Arrays.toString(sort(a)));

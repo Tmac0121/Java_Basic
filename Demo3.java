@@ -49,6 +49,7 @@ class Pencil{
 
 class Pen{
 	String color;
+	abstract void pen();
 }
 
 class Box<T>{		//<>里面放一个class名字；
@@ -73,7 +74,7 @@ class Person{
 class Student extends Person implements Human,Xxx,Yyyy{		//一个class后面只能继承一个父类，但是可以接很多接口；抽象类和具体类可以继承抽象类，但是抽象类不能继承具体类；
 	void sayHi(){
 		System.out.println("Hello");	//强制性让继承的非抽象class override这个抽象class中的抽象method；
-		private int age = 18;			//封装性 与private关键字是分割不开的；
+		private int age = 18;			//封装性 与private关键字是分割不开的；想要调用private的变量只能用public的getter；
 	}
 
 	int getAge(){
